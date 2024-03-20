@@ -1,0 +1,503 @@
+
+#header {
+  padding-top: 10px;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.logo-sidebyside a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: black;
+}
+
+.logo-sidebyside b {
+  font-size: 1.0em; 
+  padding: 100px;
+}
+
+body {
+  background: white;
+  font-family: "Nunito", "Arial", sans-serif;
+}
+
+.page {
+  max-width: 950px;
+  margin: auto;
+  background: #e0e0e083;
+  padding: 10px;
+}
+
+.menu {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(196, 0, 0);
+  border-radius: 10px;
+}
+
+.menu a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 15px 29px;
+  text-decoration: none;
+  font-size: 1.2em; 
+}
+
+.more-a{
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(196, 0, 0);
+  border-radius: 10px;
+  padding: 10px 20px;
+  bottom: 55px;
+  right: 20px;
+}
+
+/*Slideshow*/
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 35px;
+  padding: 50px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px 35px;
+  background-color: #bbb;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*chechbox*/
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 25px;
+  cursor: pointer;
+}
+.menu-btn__burger {
+  padding-right: 50px;
+  border-radius: 2px;
+  width: 50px;
+  height: 7px;
+  background: white;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  border-radius: 2px;
+  width: 50px;
+  height: 7px;
+  background: white;
+}
+.menu-btn__burger::before {
+  transform: translateY(-14px);
+  
+}
+.menu-btn__burger::after {
+  transform: translateY(14px);
+}
+
+.menu-second {
+  overflow: hidden;
+  background-color: rgb(196, 0, 0);
+  border-radius: 10px;
+}
+
+.menu-second a {
+  float: left;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 10px 90px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(196, 0, 0);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(196, 0, 0);
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  float: none;
+  font-size: 1.4em;
+  color: whiet;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(220, 0, 0);
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+/*Stiri si Noutati*/
+a.main-title{
+  font-size: 2em;
+  float: right;
+  padding: 10px 200px;
+}
+
+.entry-title{
+  text-align: center;
+}
+.entry-content-title{
+  font-size: 1.5em; 
+}
+hr.line {
+  border: 2px solid rgb(196, 0, 0);
+}
+  
+.more{
+  text-decoration: none;
+  float: right;
+  color: white;
+  background-color: rgb(196, 0, 0);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+/*Stiri*/
+.more-stiri {
+  text-decoration: none;
+  float: left;
+  color: white;
+  background-color: rgb(196, 0, 0);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.arrow {
+  border: solid White;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.linie{
+  position:absolute;
+  border: solid white;
+  border-width: 0 0px 3px 0;
+  bottom: 758px;
+  left: 430px;
+  display: inline-block;
+  padding: 5px;
+}
+
+/*Educatie*/
+#border{
+  border-radius: 25px;
+  border: 3px solid rgb(196, 0, 0);
+  padding: 20px; 
+  width: 905px;
+  height: 230px; 
+}
+
+/*Licenta Master*/
+.imglicenta{
+  margin: auto;
+  width: 94%;
+}
+
+.linie1{
+  position:absolute;
+  border: solid white;
+  border-width: 0 0px 3px 0;
+  bottom: 758px;
+  left: 422px;
+  display: inline-block;
+  padding: 5px;
+}
+
+/*Materiale didactice*/
+#border4{
+  border-radius: 25px;
+  border: 3px solid rgb(220, 0, 0);
+  padding: 20px; 
+  width: 300px;
+  height: 280px; 
+}
+
+.c1, .c2, .c3{
+  padding: 20px;
+  flex-basis: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgmateriale{ 
+  width: 240px;
+  height: 210px;
+}
+
+#border4 a{
+  font-size: 1.7em;
+  display: flex;
+  justify-content: center;
+}
+
+/*Disciplina*/
+
+#border5{
+  border-radius: 15px;
+  border: 3px solid rgb(220, 0, 0);
+  padding: 20px; 
+  width: 250px;
+  height: 80px; 
+}
+
+#border5 a{
+  font-size: 1.7em;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(220, 0, 0);
+}
+
+#border6{
+  border-radius: 15px;
+  border: 3px solid rgb(220, 0, 0);
+  padding: 20px; 
+  width: 250px;
+  height: 70px; 
+}
+
+#border6 a{
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(220, 0, 0);
+}
+
+
+.c1, .c2, .c3, .c4{
+  padding: 20px;
+  flex-basis: 22%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Cercetare*/
+#border7{
+  border-radius: 25px;
+  border: 3px solid rgb(220, 0, 0);
+  padding: 30px; 
+  width: 250px;
+  height: 410px; 
+}
+
+#border7 a{
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.d1, .d2{
+  padding: 20px;
+  flex-basis: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgITEC{
+  width: 200px;
+  height: 200px;
+}
+
+.imgGCER{
+  width: 240px;
+  height: 240px;
+}
+
+/*ITEC GCER*/
+.text1 {
+  color: rgb(220, 0, 0);
+  font-size: 35px;
+  padding: 50px 120px;
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/*Personal*/
+.imgpersonal{
+  width: 200px;
+  height: 250px;
+}
+
+#border2{
+  border-radius: 25px;
+  border: 3px solid rgb(196, 0, 0);
+  padding: 20px; 
+  width: 250px;
+  height: 410px; 
+}
+
+#border3{
+  border-radius: 25px;
+  border: 3px solid rgb(220, 0, 0);
+  padding: 20px; 
+  width: 250px;
+  height: 410px; 
+}
+
+.entry-content-contact3{
+  margin: 20px auto 0 auto;
+  display:flex;
+}
+
+.b1{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entry-content-contact4{
+  margin: 20px auto 0 auto;
+  display:flex;
+}
+
+.b2, .b3, .b4{
+  padding: 20px;
+  flex-basis: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Contact*/
+.entry-content-contact1{
+  margin: 20px auto 0 auto;
+  display: flex;
+}
+.entry-content-contact2{
+  margin: 20px auto 0 auto;
+  display: flex;
+}
+
+.a1, .a2{
+  padding: 20px;
+  flex-basis: 45%;
+}
+.a3, .a4{
+  padding: 20px;
+  flex-basis: 50%;
+}
+#map {
+  height: 300px;
+  width: 450px;
+}
